@@ -1,55 +1,55 @@
-# Klasifikasi Suicidal Thoughts dengan Machine Learning
+# 🧠 Suicidal Thoughts Classification with Machine Learning
 
-Repository ini berisi implementasi proyek *Penggunaan Model Machine Learning dalam Pembentukan Model Klasifikasi Suicidal Thoughts Menggunakan Data Twitter/X*. Proyek ini bertujuan untuk mendeteksi indikasi pemikiran bunuh diri berdasarkan data dari jejaring sosial **Twitter/X** menggunakan berbagai teknik *Natural Language Processing (NLP)* dan model *Machine Learning*.
+This repository contains the implementation of the project *Utilizing Machine Learning Models to Classify Suicidal Thoughts Using Data from Twitter/X*. The project aims to detect suicidal tendencies based on data from the **Twitter/X** social media platform using various *Natural Language Processing (NLP)* techniques and *Machine Learning* models.
 
-## Latar Belakang
+## 🌟 Background
 
-Setiap tahun, 703,000 orang di dunia mengakhiri hidupnya, dengan bunuh diri menjadi penyebab kematian keempat pada usia 15-29 tahun. Di Indonesia sendiri, terdapat 6,544 kasus kematian akibat bunuh diri pada tahun 2019. Dengan memanfaatkan data dari Twitter/X, proyek ini bertujuan untuk mendeteksi dini pemikiran bunuh diri sehingga dapat diarahkan kepada layanan bantuan seperti hotline atau psikolog.
+Every year, approximately 703,000 people worldwide end their lives, making suicide the fourth leading cause of death among individuals aged 15-29 years. In Indonesia, 6,544 suicide-related deaths were recorded in 2019. By leveraging data from Twitter/X, this project aims to enable early detection of suicidal thoughts and direct individuals to support services such as suicide hotlines or psychologists.
 
-## Metodologi
+## 🔍 Methodology
 
-### 1. Data Collection
-Dataset dikumpulkan dengan melakukan *scraping* pada platform Twitter/X menggunakan Python. Kata kunci seperti "capek hidup", "depresi", dan "nyerah" digunakan untuk mendapatkan data sebanyak 3000 *tweets* dalam format CSV.
+### 1. Data Collection 📊
+The dataset was collected by scraping Twitter/X using Python. Keywords like "capek hidup" (tired of life), "depresi" (depression), and "nyerah" (give up) were used to gather approximately 3,000 tweets in CSV format.
 
-### 2. Data Preprocessing
-Tahapan pembersihan dan transformasi data mencakup:
-- **Data Cleaning**: Menghapus elemen-elemen tidak relevan seperti *mention*, hashtag, dan URL.
-- **Normalisasi**: Mengubah kata-kata tidak baku menjadi baku.
-- **Spell Correction**: Memperbaiki kesalahan ejaan.
-- **Stopword Deletion**: Menghapus kata-kata yang tidak memiliki makna signifikan.
-- **Tokenization & Lemmatization**: Membagi teks menjadi unit-unit kecil dan mengubahnya menjadi bentuk dasar.
-- **Labeling**: Menggunakan model *DistilBERT* untuk memberikan label (*neutral*, *positive*, *negative*).
+### 2. Data Preprocessing 🛠️
+The preprocessing steps included cleaning and transforming the data:
+- **Data Cleaning**: Removing irrelevant elements like mentions, hashtags, and URLs.
+- **Normalization**: Converting informal or abbreviated words into their formal forms.
+- **Spell Correction**: Fixing spelling errors.
+- **Stopword Deletion**: Removing insignificant words.
+- **Tokenization & Lemmatization**: Splitting text into smaller units and converting them into their root forms.
+- **Labeling**: Using the *DistilBERT* model to label tweets as *neutral*, *positive*, or *negative*.
 
-### 3. Fine-Tuning dan Modelling
-Model yang digunakan meliputi:
-- **Random Forest**
-- **Support Vector Machine (SVM)**
-- **IndoBERT**
+### 3. Fine-Tuning and Modelling 🤖
+The models used were:
+- **Random Forest** 🌳
+- **Support Vector Machine (SVM)** 📈
+- **IndoBERT** 📚
 
-### 4. Validasi dan Evaluasi
-Model diuji untuk mendapatkan akurasi terbaik dengan hasil sebagai berikut:
-- SVM: 84.8%
-- Random Forest: 84%
-- IndoBERT: 87%
+### 4. Validation and Evaluation 📉
+The models were tested to achieve the following accuracies:
+- **SVM**: 84.8%
+- **Random Forest**: 84%
+- **IndoBERT**: 87%
 
-## Implementasi
-Proses dan eksperimen dapat diakses melalui Google Colab:
-[Google Colab Link](https://colab.research.google.com/drive/1xgsFLlj5MxSutfGUnPW6Q2izh-MRwj4E?usp=sharing)
+## 🚀 Implementation
+The process and experiments can be accessed in this Repository
 
-## Hasil Analisis
-Model **IndoBERT** memberikan performa terbaik dengan akurasi sebesar 87%, menunjukkan kemampuan unggul dalam memahami konteks teks yang kompleks.
+## 📈 Analysis
+The **IndoBERT** model outperformed others with an accuracy of 87%, demonstrating its superior ability to understand complex textual contexts.
 
-## Kelebihan
-- Fokus pada isu kesehatan mental pengguna media sosial.
-- Data yang digunakan bersifat original.
-- Menggunakan *state-of-the-art* model NLP seperti IndoBERT.
+## ✅ Strengths
+- Focuses on mental health issues for social media users.
+- Uses original data.
+- Implements *state-of-the-art* NLP models like IndoBERT.
 
-## Kekurangan
-- Dataset hanya berisi 3000 *tweets*, menyebabkan model cenderung bias terhadap data negatif.
-- Belum ada implementasi dalam bentuk *web application*.
+## ❌ Limitations
+- The dataset consists of only 3,000 tweets, causing the model to be biased towards negative data.
+- No deployment as a web application has been implemented yet.
 
-## Kesimpulan
-Proyek ini menunjukkan bahwa metode IndoBERT efektif dalam mendeteksi kecenderungan bunuh diri pada *tweets*. Dengan penambahan data dan pengurangan ketidakseimbangan dataset, akurasi model dapat ditingkatkan lebih lanjut.
+## 🏁 Conclusion
+This project demonstrates that the IndoBERT method is effective in detecting suicidal tendencies in tweets. With additional data and better dataset balancing, the model's accuracy could be further improved.
 
 ---
+
 
